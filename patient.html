@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-container label {
+      font-size: 16px;
+      margin: 10px 0 5px;
+      display: block;
+    }
+    .form-container input, .form-container select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    .submit-btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+    }
+    .submit-btn:active {
+      background-color: #45a049;
+    }
+    @keyframes blink {
+      0% { background-color: #4CAF50; }
+      50% { background-color: #45a049; }
+      100% { background-color: #4CAF50; }
+    }
+    .submit-btn.blink {
+      animation: blink 1s infinite;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Patient Information Form</h2>
+    <form>
+      <label for="bloodColor">Blood Color:</label>
+      <input type="text" id="bloodColor" name="bloodColor" required>
+
+      <label for="bloodPressure">Blood Pressure:</label>
+      <input type="text" id="bloodPressure" name="bloodPressure" required>
+
+      <label for="pancreas">Pancreas Condition:</label>
+      <input type="text" id="pancreas" name="pancreas" required>
+
+      <label for="whiteDischarges">White Discharges:</label>
+      <input type="text" id="whiteDischarges" name="whiteDischarges" required>
+
+      <label for="bodyTemperature">Body Temperature:</label>
+      <input type="number" id="bodyTemperature" name="bodyTemperature" step="0.1" required>
+
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" name="weight" required>
+
+      <label for="periodicCycle">Periodic Cycle:</label>
+      <input type="text" id="periodicCycle" name="periodicCycle" required>
+
+      <label for="whiteBloodCells">White Blood Cells Count:</label>
+      <input type="number" id="whiteBloodCells" name="whiteBloodCells" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="ovarianCancerRisk">Ovarian Cancer Risk:</label>
+      <select id="ovarianCancerRisk" name="ovarianCancerRisk" required>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <button type="submit" class="submit-btn blink">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

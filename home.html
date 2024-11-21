@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimizing Ovarian Cancer Diagnosis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      background-color: #333;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      margin: 0 10px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .navbar a:hover {
+      animation: blink 0.5s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% {
+        background-color: #ff6f61;
+        color: white;
+      }
+      50% {
+        background-color: white;
+        color: #333;
+      }
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(to right, #ff6f61, #7c9bda);
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: fadeIn 1.5s;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      animation: fadeIn 2s;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #333;
+      background-color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      animation: fadeIn 2.5s;
+    }
+
+    .hero button:hover {
+      background-color: #ff6f61;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      position: relative;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="home.html">HOME</a>
+    <a href="Regs.html">REGISTRATION</a>
+    <a href="login.html">LOGIN</a>
+    <a href="Aboutus.html">ABOUT US</a>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div>
+      <h1>Optimizing Ovarian Cancer Diagnosis</h1>
+      <p>
+        Revolutionizing ovarian cancer detection with advanced diagnostics and cutting-edge technology. Join us in our mission to make early and accurate detection accessible for all.
+      </p>
+      <button onclick="learnMore()">Learn More</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Optimizing Ovarian Cancer Diagnosis. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Dynamic behavior for the "Learn More" button
+    function learnMore() {
+      alert("Thank you for your interest! Visit the About Us section for more information.");
+    }
+  </script>
+
+</body>
+</html>
